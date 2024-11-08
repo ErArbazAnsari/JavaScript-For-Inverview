@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            console.log("Global Execution Context Start");
+            var globalVariable = "I am a global variable";
+
+            function globalFunction() {
+                console.log("I am inside global function");
+            }
+
+            console.log(globalVariable);
+            globalFunction();
+
+            console.log("Global Execution Context End");
+        </script>
+    </body>
+</html>
