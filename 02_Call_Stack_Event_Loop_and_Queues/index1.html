@@ -9,10 +9,16 @@
         <script>
             console.log("Start");
             setTimeout(() => {
-                console.log("setTimeout Works Completed...");
+                console.log("This is from setTimeout first");
             }, 0);
 
+            Promise.resolve().then(() => {
+                console.log("This is from microtask queue");
+            });
             console.log("End");
         </script>
     </body>
 </html>
+
+<!-- Notes -->
+<!-- Starvation -> https://medium.com/@sumedhakoranga/starvation-in-javascript-0a98f0824272 --> 

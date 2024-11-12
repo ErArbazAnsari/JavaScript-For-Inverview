@@ -9,8 +9,14 @@
         <script>
             console.log("Start");
             setTimeout(() => {
-                console.log("setTimeout Works Completed...");
+                console.log("First");
             }, 0);
+            setTimeout(() => {
+                console.log("Second");
+            }, 0);
+            setTimeout(() => {
+                console.log("Third");
+            }, 2 * 1000);
 
             console.log("End");
         </script>

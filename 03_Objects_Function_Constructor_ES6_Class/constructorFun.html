@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // this is how we create object in js before es6 ->> not used today
+            function Person(fname, lname, contact) {
+                this.fname = "Arbaz";
+                this.lname = "Ansari";
+                this.contact = "99999999999";
+                this.work = function () {
+                    return console.log(this.fname);
+                };
+            }
+
+            const person1 = new Person("Arbaz", "Ansari", 99999999999);
+            // console.log(
+            //     person1.fname,
+            //     person1.lname,
+            //     person1.contact,
+            //     person1.work()
+            // );
+
+            // after es6 -> classes introduced
+            class Emp {
+                constructor(fname, lname, contact) {
+                    (this.fname = fname),
+                        (this.lname = lname),
+                        (this.contact = contact);
+                }
+            }
+
+            const emp1 = new Emp("Arbaz", "Ansari", 99999999);
+            console.log(emp1);
+            console.log(typeof emp1);
+        </script>
+    </body>
+</html>

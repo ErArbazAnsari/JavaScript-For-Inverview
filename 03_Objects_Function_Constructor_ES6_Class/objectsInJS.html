@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const person = {
+                fname: "Arbaz",
+                lname: "Ansari",
+                contact: "99999999999",
+                work: function () {
+                    console.log(this.fname);
+                },
+            };
+
+            console.log(person.fname);
+            console.log(person.lname);
+            console.log(person.contact);
+            console.log(person.work());
+        </script>
+    </body>
+</html>
